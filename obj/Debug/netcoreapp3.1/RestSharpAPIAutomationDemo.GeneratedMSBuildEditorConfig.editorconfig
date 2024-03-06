@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = RestSharpAPIAutomationDemo
+build_property.ProjectDir = C:\repos_others\restsharp-api-automation-demo\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

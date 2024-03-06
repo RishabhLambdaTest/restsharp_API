@@ -1,0 +1,54 @@
+{
+    "id": "d6ed9739-548e-4c78-ab0f-8a6850fd0a33",
+    "created_at": "2023-05-05T15:16:06Z",
+    "update_at": "2023-05-05T15:16:53Z",
+    "global_timeout": 90,
+    "tunnel_name": "",
+    "start_time": "2023-05-05T15:16:47Z",
+    "end_time": "2023-05-05T15:16:53Z",
+    "summary": {
+        "total_time": 6000000000,
+        "execution_time": 6000000000,
+        "total_tasks": 1,
+        "build_time_consumed": 6000000000,
+        "jobTestExecutionTime": "0s",
+        "failed_tasks": 1,
+        "total_stage_info": {
+            "prerun": {
+                "StageFailedPercent": 100,
+                "StagePassPercent": 0,
+                "TotalStage": 1
+            }
+        },
+        "status": "failed",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=d6ed9739-548e-4c78-ab0f-8a6850fd0a33"
+    },
+    "tasks": [
+        {
+            "id": "26ad0b57-802d-4f90-a741-9b8d230a8306",
+            "os": "win",
+            "status": "failed",
+            "remark": "step 1 - exit status 1",
+            "debug": false,
+            "created_at": "2023-05-05T15:16:46Z",
+            "update_at": "2023-05-05T15:16:53Z",
+            "start_time": "2023-05-05T15:16:47Z",
+            "end_time": "2023-05-05T15:16:53Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "f316ae85-179c-4cfc-b276-e9781fbf7762",
+                    "type": "prerun",
+                    "status": "failed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2023-05-05T15:16:49Z",
+                    "started_at": "2023-05-05T15:16:50Z",
+                    "updated_at": "2023-05-05T15:16:51Z",
+                    "order": 1
+                }
+            ]
+        }
+    ]
+}

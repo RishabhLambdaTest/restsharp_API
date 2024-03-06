@@ -1,0 +1,61 @@
+version: "0.1"
+user: sampath.k.bejugama
+key: 0YnWr3nAo9xAHyklkxjSdVprfu4BcqPmBlqQXaXKrQCrc1VULU
+testSuites: []
+pre: ["%HYPEREXECUTE_WORKING_DIR%/HyperExecute/cert_manager.exe --pwc --chrome -i atester309.pfx\n"]
+preDirectives:
+    commands: ["%HYPEREXECUTE_WORKING_DIR%/HyperExecute/cert_manager.exe --pwc --chrome -i atester309.pfx\n"]
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+postDirectives:
+    commands: []
+    shell: ""
+    workingDirectory: ""
+jobLabel:
+    - KYC
+runson: win
+autosplit: true
+concurrency: 1
+testDiscovery:
+    autosubset: true
+    command: echo "test"
+    mode: dynamic
+    type: raw
+testRunnerCommand: nunit3-console.exe "\\GlobalPolaris\\bin\\Debug\\net472\\GlobalPolaris.dll" --where "cat==compliance"
+globalTimeout: 90
+tunnelOpts:
+    args:
+        - --verbose
+    global: true
+    systemProxy: true
+tunnelNames:
+    - htZLtDHmEfMsOjTL
+testSuiteTimeout: 90
+testSuiteStep: 90
+maxRetries: 1
+skipOnError: true
+jobID: d6ed9739-548e-4c78-ab0f-8a6850fd0a33
+codeDirectory: Hyperexecute
+framework:
+    name: ""
+    flags: []
+    discoveryFlags: []
+    discoveryType: ""
+    runnerFlags: []
+    workingDirectory: ""
+    isTestNGXMLSuite: false
+    defaultReports: true
+    additional_args: null
+    licenseKey: ""
+    userdefinediscovery: false
+    toscaArgs: null
+    version: ""
+cypress: false
+betaFeature:
+    setPartiallyCompletedAsCompleted: false
+combineTasksInMatrixMode: false
+captureScreenRecordingForScenarios: false
+maxRetriesPreSteps: 0
+triggerMode: false
+collectLocalGitData: false
